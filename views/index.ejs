@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="contact-box">
+        <div class="left"></div>
+        <div class="right">
+          <form action="/contact" method="POST">
+            <h2>
+              <% if (status === 200) { %> <%= message %> <%} else { %> <%=
+              message %> <% } %>
+            </h2>
+            <input
+              type="text"
+              name="fullNames"
+              class="field"
+              placeholder="Enter your full names..."
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="field"
+              placeholder="Enter your email..."
+              required
+            />
+            <input
+              type="tel"
+              name="mobile"
+              class="field"
+              placeholder="Enter your mobile number..."
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Enter message..."
+              class="field"
+              required
+            ></textarea>
+            <button class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
