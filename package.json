@@ -1,0 +1,36 @@
+{
+  "name": "express-contact-form",
+  "version": "1.0.0",
+  "description": "easy to use fully functional contact form using nodejs and express",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elregalo/express-contact-form.git"
+  },
+  "keywords": [
+    "expressjs",
+    "nodejs",
+    "contact-form",
+    "email"
+  ],
+  "author": "Moobi Kabelo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elregalo/express-contact-form/issues"
+  },
+  "homepage": "https://github.com/elregalo/express-contact-form#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "ip": "^1.1.8",
+    "mailgen": "^2.0.27",
+    "nodemailer": "^6.7.7"
+  }
+}
